@@ -102,7 +102,7 @@ header .container {
 }
 
 header .heading {
-  min-height: 97px;
+  min-height: 200px;
   display: flex;
   align-items: center;
   position: absolute;
@@ -185,6 +185,10 @@ header .content h1 {
 
 .portfolio .container {
   text-align: center;
+}
+
+.portfolio .container .heading {
+  margin-bottom: 0;
 }
 
 .portfolio .container figure {
@@ -293,6 +297,9 @@ footer p {
 /* Start Desktop */
 @media (min-width: 768px) {
   /* Start Header */
+  header {
+    background-image: url("images/desktop/image-hero.jpg");
+  }
   header .container {
     justify-content: flex-start;
   }
@@ -398,38 +405,51 @@ footer p {
 
   /* Start Footer */
   footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  footer .container {
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+
     grid-row-gap: 20px;
   }
   footer nav ul {
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 0;
   }
 
   footer .logo {
     order: 1;
+    text-align: left;
+    padding-left: 10px;
+    width: 170px;
+  }
+
+  footer .logo img {
+    width: 100%;
   }
 
   footer nav {
-    order: 2;
+    order: 3;
   }
 
   footer .social-links {
-    order: 3;
+    order: 2;
   }
 
   footer .social-links ul {
     margin-bottom: 0;
+    justify-content: flex-end;
   }
 
   footer p {
     order: 4;
     margin-left: 65px;
+    text-align: right;
+    padding-right: 20px;
   }
   /* End Footer */
 }
