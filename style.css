@@ -142,6 +142,7 @@ header .content {
   border: 2px solid var(--white);
   width: 100%;
   padding: 20px;
+  margin-top: 40px;
 }
 
 header .content h1 {
